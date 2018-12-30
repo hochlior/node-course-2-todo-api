@@ -32,7 +32,7 @@ var UserSchema = new mongoose.Schema({
       required: true
     }
   }]
-});
+}, {usePushEach: true});
 
 UserSchema.methods.toJSON = function() {
   var user = this;
